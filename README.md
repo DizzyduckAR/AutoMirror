@@ -4,13 +4,13 @@
 
 **Auto Download scrcpy and ADB tools**
 
-**auto Get phone SN**
+**Auto Get phone SN**
 
-**auto Put connected phone in TCP Mode**
+**Auto Put connected phone in TCP Mode**
 
-**auto Get phone IP**
+**Auto Get phone IP**
 
-**auto Wifi Mirror**
+**Auto Wifi Mirror**
 
 --No Root needed--
 
@@ -20,7 +20,7 @@
 
 **Phone Debug !!MUST BE ON!!**
 
-(gif show how in: FULLAuto Mirror ZIP Help -DIR-)
+(Gif show how in: FULLAuto Mirror ZIP Help -DIR-)
 
 Script can solo run from 3kb file
 
