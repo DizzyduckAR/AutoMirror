@@ -1,5 +1,6 @@
 # AutoMirror
-One click powershell AutoMirror any Android to PC By USB or WIFI
+
+**One click powershell AutoMirror any Android to PC By USB or WIFI**
 
 **Auto Download scrcpy and ADB tools**
 
@@ -74,6 +75,8 @@ Include
 
 **How to Debug Phone**
 
+Step 1
 ![1Enable-Developer-Options-Android- GIF](https://user-images.githubusercontent.com/52171360/63210271-dafbd080-c0f4-11e9-8b32-18f4d4386272.gif)
 
+Step 2
 ![2Enable-Debug-GIF](https://user-images.githubusercontent.com/52171360/63210272-dd5e2a80-c0f4-11e9-9849-f7254db6ff24.gif)
