@@ -21,7 +21,8 @@ One click powershell AutoMirror any Android to PC By USB or WIFI
 
 (gif show how in: FULLAuto Mirror ZIP Help -DIR-)
 
-/\Script can solo run from 3kb file/\
+Script can solo run from 3kb file
 
 Simple run with powershell
+
 ![Image of run with powershell](https://www.howtogeek.com/wp-content/uploads/2014/12/RightClick.png)
