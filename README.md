@@ -34,28 +34,12 @@ Simple run start file
 
 [AutoMirror MINI v0.2.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/AutoMirror%20MINI%20v0.2.zip) 
 
-Include
- WIFI Mirror start.ps1 
- USB Mirror start.ps1
- 32 bit-OLD PC ‏‏WIFI Mirror start.ps1
- ip.bat
- Credits.txt
 
 
 
  
 [‏‏AutoMirror Full v0.2](https://github.com/DizzyduckAR/AutoMirror/raw/master/%E2%80%8F%E2%80%8FAutoMirror%20Full%20v0.2.zip)
 
-Include
- WIFI Mirror start.ps1 
- USB Mirror start.ps1
- 32 bit-OLD PC ‏‏WIFI Mirror start.ps1
- ip.bat
- Credits.txt
- Change Log.txt
- Multi Device Tool (Dir) 
- Help (Dir)
- Addons (Dir)
 
 
 
@@ -64,9 +48,9 @@ Include
 
 
 
-![1](https://user-images.githubusercontent.com/52171360/63210220-63c63c80-c0f4-11e9-9ac5-837e443fa717.png)
+![1](https://user-images.githubusercontent.com/52171360/63218202-dbc94c80-c15e-11e9-9229-6c4cbb2e6881.png)
 
-![2](https://user-images.githubusercontent.com/52171360/63210221-66289680-c0f4-11e9-8fa4-dca2a80aec80.png)
+![2](https://user-images.githubusercontent.com/52171360/63218203-dcfa7980-c15e-11e9-83a9-598218d761d8.png)
 
 ![3](https://user-images.githubusercontent.com/52171360/63210222-688af080-c0f4-11e9-9221-e14699834c62.png)
 
