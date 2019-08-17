@@ -50,7 +50,7 @@ Simple run start file
 
 ![1](https://user-images.githubusercontent.com/52171360/63218202-dbc94c80-c15e-11e9-9229-6c4cbb2e6881.png)
 
-![2](https://user-images.githubusercontent.com/52171360/63218203-dcfa7980-c15e-11e9-83a9-598218d761d8.png)
+![2](https://user-images.githubusercontent.com/52171360/63218270-dd474480-c15f-11e9-863c-30ecf36b7d11.png)
 
 ![3](https://user-images.githubusercontent.com/52171360/63210222-688af080-c0f4-11e9-9221-e14699834c62.png)
 
