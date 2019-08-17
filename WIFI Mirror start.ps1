@@ -12,7 +12,7 @@
                                                        
  
          *                 *                  *              *
-                 Arazu (DizzyDuck)#0913  DISCORD     *             *
+               https://discord.gg/CUgnVpk  DISCORD     *             *
      *            *             *                          *
             https://github.com/DizzyduckAR/AutoMirror/
                         *            *                             ___
@@ -21,7 +21,7 @@
                       @\\\\\\\\\##    *     |              |--I|===|-|
   *                  @@@\\\\\\\\##\       \|/|/            |---|   |A|
                     @@ @@\\\\\\\\\\\    \|\\|//|/     *   /     \  |D|
-             *     @@@@@@@\\\\\\\\\\\    \|\|/|/         | blame | |D|baby
+             *     @@@@@@@\\\\\\\\\\\    \|\|/|/         | blame | |B|aby
                   @@@@@@@@@----------|    \\|//          |  it   |=| |
        __         @@ @@@ @@__________|     \|/           |  on   | | |
   ____|_@|_       @@@@@@@@@__________|     \|/           |__my___| |_|
@@ -74,9 +74,6 @@ timeout 3
 	if(-not $noInstall)
 	{
 $sn = ./scrcpy/adb.exe -d get-serialno
-#$cmd = ".\adb -s" + $sn + tcpip ":5555"
-#Write-Debug $cmd
-#Invoke-Expression $cmd
 echo $sn
 $adblocation = Detect-ADB-Location
 

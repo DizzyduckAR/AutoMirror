@@ -1,6 +1,6 @@
 @echo off
 
-echo Arazu (DizzyDuck)#0913  DISCORD
+echo https://discord.gg/CUgnVpk  DISCORD  
 
 echo https://github.com/DizzyduckAR/AutoMirror/
 

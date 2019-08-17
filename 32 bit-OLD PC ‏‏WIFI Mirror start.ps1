@@ -3,7 +3,6 @@
     [switch]$forceADBDownload = $false
     )
 
-
 "
  ______     ______     ______     ______     __  __    
 /\  __ \   /\  == \   /\  __ \   /\___  \   /\ \/\ \   
@@ -32,10 +31,8 @@ ____0_____0__\|/__@@@@__@@@__________|_\|/__|___\|/__\|/___________|_|_
 "
 
 
-
-
 function Get-Platform-Tools {
-    Invoke-WebRequest https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-win64-v1.10.zip -OutFile ".\scrcpy.zip" | out-null
+    Invoke-WebRequest https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-win32-v1.10.zip -OutFile ".\scrcpy.zip" | out-null
     Expand-Archive .\scrcpy.zip -DestinationPath .\scrcpy
 }
 
@@ -84,7 +81,9 @@ $adblocation = Detect-ADB-Location
         & $adblocation kill-server
 		& $adblocation wait-for-device
         & timeout 3
-        & ./scrcpy/scrcpy.exe -s $sn
+        & $adblocation -s $sn tcpip 5555
+        & timeout 3
+		& start-process ip.bat
 		& Exit-PSSession
 
 	} else 
