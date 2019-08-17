@@ -31,7 +31,7 @@ Simple run with powershell
 
 **Download**
 
-[Auto Mirror v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/blob/master/Auto%20Mirror%20v0.1.1.zip) 
+[Auto Mirror v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto%20Mirror%20v0.1.1.zip) 
 
 Include
  WIFI Mirror start.ps1 
@@ -43,10 +43,7 @@ Include
 
 
  
-
-FULLAuto Mirror  v0.1.1
-
-[FULLAuto Mirror  v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/blob/master/FULLAuto%20Mirror%20%20v0.1.1.zip)
+[FULLAuto Mirror  v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/FULLAuto%20Mirror%20%20v0.1.1.zip)
 
 Include
  WIFI Mirror start.ps1 
@@ -58,3 +55,8 @@ Include
  Multi Device Tool (Dir) 
  Help (Dir)
  Addons (Dir)
+
+
+
+
+**ScreenShots**
