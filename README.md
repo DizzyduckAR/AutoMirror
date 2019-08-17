@@ -1,5 +1,7 @@
 # AutoMirror
 
+Pushed V0.2
+
 **One click powershell AutoMirror any Android to PC By USB or WIFI**
 
 **Auto Download scrcpy and ADB tools**
@@ -24,15 +26,13 @@
 
 Script can solo run from 3kb file
 
-Simple run with powershell
-
-![Image of run with powershell](https://www.howtogeek.com/wp-content/uploads/2014/12/RightClick.png)
+Simple run start file
 
 
 
 **Download**
 
-[Auto Mirror v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto%20Mirror%20v0.1.1.zip) 
+[AutoMirror MINI v0.2.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/AutoMirror%20MINI%20v0.2.zip) 
 
 Include
  WIFI Mirror start.ps1 
@@ -44,7 +44,7 @@ Include
 
 
  
-[FULLAuto Mirror  v0.1.1.zip](https://github.com/DizzyduckAR/AutoMirror/raw/master/FULLAuto%20Mirror%20%20v0.1.1.zip)
+[‏‏AutoMirror Full v0.2](https://github.com/DizzyduckAR/AutoMirror/raw/master/%E2%80%8F%E2%80%8FAutoMirror%20Full%20v0.2.zip)
 
 Include
  WIFI Mirror start.ps1 
