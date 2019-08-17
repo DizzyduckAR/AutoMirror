@@ -61,6 +61,8 @@ Include
 
 **ScreenShots**
 
+
+
 ![1](https://user-images.githubusercontent.com/52171360/63210220-63c63c80-c0f4-11e9-9ac5-837e443fa717.png)
 
 ![2](https://user-images.githubusercontent.com/52171360/63210221-66289680-c0f4-11e9-8fa4-dca2a80aec80.png)
@@ -68,3 +70,10 @@ Include
 ![3](https://user-images.githubusercontent.com/52171360/63210222-688af080-c0f4-11e9-9221-e14699834c62.png)
 
 ![4](https://user-images.githubusercontent.com/52171360/63210224-6aed4a80-c0f4-11e9-934e-044cc4853b78.png)
+
+
+**How to Debug Phone**
+
+![1Enable-Developer-Options-Android- GIF](https://user-images.githubusercontent.com/52171360/63210271-dafbd080-c0f4-11e9-8b32-18f4d4386272.gif)
+
+![2Enable-Debug-GIF](https://user-images.githubusercontent.com/52171360/63210272-dd5e2a80-c0f4-11e9-9849-f7254db6ff24.gif)
