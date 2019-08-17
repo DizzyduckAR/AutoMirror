@@ -26,3 +26,37 @@ Script can solo run from 3kb file
 Simple run with powershell
 
 ![Image of run with powershell](https://www.howtogeek.com/wp-content/uploads/2014/12/RightClick.png)
+
+
+
+**Download**
+
+Auto Mirror v0.1.1.zip
+
+![link text itself] (https://github.com/DizzyduckAR/AutoMirror/blob/master/Auto%20Mirror%20v0.1.1.zip) 
+
+Include
+ WIFI Mirror start.ps1 
+ USB Mirror start.ps1
+ 32 bit-OLD PC ‏‏WIFI Mirror start.ps1
+ ip.bat
+ Credits.txt
+
+
+
+ 
+
+Auto Mirror v0.1.1.zip
+
+[link text itself]:https://github.com/DizzyduckAR/AutoMirror/blob/master/Auto%20Mirror%20v0.1.1.zip 
+
+Include
+ WIFI Mirror start.ps1 
+ USB Mirror start.ps1
+ 32 bit-OLD PC ‏‏WIFI Mirror start.ps1
+ ip.bat
+ Credits.txt
+ Change Log.txt
+ Multi Device Tool (Dir) 
+ Help (Dir)
+ Addons (Dir)
