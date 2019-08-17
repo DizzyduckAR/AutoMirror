@@ -33,7 +33,7 @@ Simple run with powershell
 
 Auto Mirror v0.1.1.zip
 
-![link text itself] (https://github.com/DizzyduckAR/AutoMirror/blob/master/Auto%20Mirror%20v0.1.1.zip) 
+[Github](https://github.com/DizzyduckAR/AutoMirror/blob/master/Auto%20Mirror%20v0.1.1.zip) 
 
 Include
  WIFI Mirror start.ps1 
