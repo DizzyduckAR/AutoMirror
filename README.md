@@ -1,6 +1,6 @@
 # AutoMirror
 
-Pushed V0.2
+20/08/19 Fixed IP.bat path error
 
 **One click powershell AutoMirror any Android to PC By USB or WIFI**
 
