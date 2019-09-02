@@ -40,7 +40,7 @@ Simple run start file
 
 
  
-[‏‏AutoMirror Full v0.2](https://github.com/DizzyduckAR/AutoMirror/raw/master/%E2%80%8F%E2%80%8FAutoMirror%20Full%20v0.2.zip)
+[AutoMirror Win7 No PS](https://github.com/DizzyduckAR/AutoMirror/raw/master/AutoMirror%20Win7-NOPS.zip)
 
 
 
