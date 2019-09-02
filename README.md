@@ -1,5 +1,7 @@
 # AutoMirror
 
+02/09/19 Added AutoMirror win7 fix for no powerShell systems.
+
 20/08/19 Fixed IP.bat path error
 
 **One click powershell AutoMirror any Android to PC By USB or WIFI**
