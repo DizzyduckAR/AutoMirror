@@ -24,6 +24,10 @@ Big Update Auto-Mirror v0.3
 ![BotitCrop1](https://user-images.githubusercontent.com/52171360/65166947-4fa29180-da4a-11e9-8bba-c8ef3ae8cd62.png)
 
 
+Youtube:
+https://youtu.be/SA616OECdQU
+
+
 Download:
 
 **Mini need to run "Download Auto-Mirror" button before mirror
