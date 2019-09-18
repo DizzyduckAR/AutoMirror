@@ -5,6 +5,8 @@ Big Update Auto-Mirror v0.3
 
 **Added Control window name / Mirror Res / WIFI&USB /
 
+**Added Auto-Grab Connected Phone Local IP and ADB connect in 1click
+
 **Adeed Free clipper tool in one click
 
 **Added Phone Lcd On/Off buttons
