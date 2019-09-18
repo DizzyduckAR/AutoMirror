@@ -3,5 +3,26 @@ Made by Arazu
 https://discord.gg/CUgnVpk  DISCORD
 
 
+Scrcpy open-source
+
 Mirror by Scrcpy "Genymobile"
 https://github.com/Genymobile/scrcpy
+
+
+
+https://www.autohotkey.com/boards/
+For all the great code and code sharing  / TUT's
+
+
+
+
+## Credits
+
+*.txt Grep funcs
+
+This library is based on the *Library for Text file manipulation* started by [Heresy](http://www.autohotkey.com/forum/profile.php?mode=viewprofile&u=8193). I have contributed a number of functions to that library, but that version also has some "bugs" which are hopefully resolved in this TF library.
+
+Thanks to:
+Heresy, SKAN! (countlines, setwidth, spaces), Olegbl, (suggestion for find*), infogulch (suggestion for tab \<-\> spaces),
+Murp|e (suggestions for documentation, check if file exists), ribbet.1 (New features in TF_LineNumber), Tuncay (help with
+TF() and borrowed ideas for TAIL).
