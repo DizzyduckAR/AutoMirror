@@ -1,4 +1,30 @@
-# AutoMirror
+# Auto-Mirror
+Big Update Auto-Mirror v0.3
+
+**Added Full GUI with Multi mirror built in
+**Added Control window name / Mirror Res / WIFI&USB /
+**Adeed Free clipper tool in one click
+**Added Phone Lcd On/Off buttons
+**Added One click button to update Server core
+**Added No more console window
+**Added New paypal for auto-mirror / patreon Icons
+**Added New terminal command box to update user
+
+
+
+![BotitCrop1](https://user-images.githubusercontent.com/52171360/65166947-4fa29180-da4a-11e9-8bba-c8ef3ae8cd62.png)
+
+Download:
+**Mini need to run "Download Auto-Mirror" button before mirror
+https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto-Mirrorv0.3.zip
+
+
+**Full Auto-Mirror V0.3 With scrcpy and Pre built
+https://github.com/DizzyduckAR/AutoMirror/raw/master/AutoMirrorv3Full.zip
+
+
+
+
 
 02/09/19 Added AutoMirror win7 fix for no powerShell systems.
 
