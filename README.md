@@ -7,11 +7,11 @@ Big Update Auto-Mirror v0.4
 
 **Added Push can be made with usb and wifi or to emu
 
-**Adeed More supported android emulators Mirror (works for bot-it)
+**Added More supported android emulators Mirror (works for bot-it)
 
 **Fixed device list update and it will now update after each change
 
-**Removed auto-mirror mini (too meny zip extract issues)
+**Removed auto-mirror mini (too many zip extract issues)
 
 **Removed res cap 640
 
@@ -21,6 +21,9 @@ only terminal with bot-it api connect
 
 will push them when ready and tested
  
+ 
+ DL:
+https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto-Mirrorv0.4.zip
 
 
 Big Update Auto-Mirror v0.3
