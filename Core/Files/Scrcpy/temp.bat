@@ -1,1 +1,0 @@
-scrcpy-noconsole --window-title Mirror1 -m 640 -s 192.168.0.105:5555
