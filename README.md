@@ -1,4 +1,31 @@
 # Auto-Mirror
+Big Update Auto-Mirror v0.4
+
+**Added Full Tooltips (mouse over control)
+
+**Added pc to android apk push with com.android.vending (remove the apk update error)
+
+**Added Push can be made with usb and wifi or to emu
+
+**Added More supported android emulators Mirror (works for bot-it)
+
+**Fixed device list update and it will now update after each change
+
+**Removed auto-mirror mini (too many zip extract issues)
+
+**Removed res cap 640
+
+almost ready and will be added soon:
+record device screen
+only terminal with bot-it api connect
+
+will push them when ready and tested
+ 
+ 
+ DL:
+https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto-Mirrorv0.4.zip
+
+
 Big Update Auto-Mirror v0.3
 
 **Added Full GUI with Multi mirror built in
