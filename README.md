@@ -1,4 +1,17 @@
 # Auto-Mirror
+Auto-Mirror V0.4.5
+
+
+*Added record screen option
+**Added Scrcpy core 1.12 (fix old device issues)
+***Botit emulator button and frame coded but disabled until fully tested so button is gray.
+****Fixed free res or no res picked = Free res
+*****Fixed clean up if mirror crash to Remirror
+
+** Screen record can run on multi devices. will save the *.mp4 on Auto-Mirror Folder under File name: Rec*randomNumber*.mp4
+
+
+
 Big Update Auto-Mirror v0.4
 
 **Added Full Tooltips (mouse over control)
