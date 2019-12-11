@@ -50,22 +50,30 @@ Gui Add, Link, x170 y475 w47 h19 Vno2 , <a href="https://www.patreon.com/AutoMir
 Gui Add, Picture, x130 y465 w32 h32 , Core\patreon.png
 Gui Add, Link, x360 y475 w47 h19 vno3, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=65VHM2EKXZ8E6">Donate</a>
 Gui Add, Picture, x320 y460 w32 h32 , Core\PPlogo.png
-Gui, Add, Edit, x10 y260 w480 h100 vTerminal ReadOnly, Download Auto-Mirror First! you got a button
+Gui, Add, Edit, x10 y260 w480 h100 vTerminal ReadOnly, Welcome to Auto-Mirror
 Gui Add, Button, x410 y470 w80 h23 Vcrop1, Crop Screen
 crop1_TT := "Screen Crop user selected area"
-Gui Add, Button, x10 y470  h23 Vdl1, Download Auto-Mirror
-dl1_TT := "Download auto-mirror Core files"
+
+Gui, Add, CheckBox,x10 y400  h23 Vdl1,Record Mirror on 720P 
+dl1_TT := "Record Mirror on 720P Save after mirror close to Auto Mirror folder"
+
+
+Gui, Add, CheckBox,x10 y425  h23 disabled Vdl4,% ("Set Bit Rate")
+
+
 Gui, Add, Edit, x180 y370 w100 h20 +0x200 vadbconnect gsubmit_all, 192.168.0.0
 adbconnect_TT := "Connect to local network ip"
 Gui Add, Button, x295 y370 w49 h20 Vconn2 , &Connect
 
-Gui Add, Button, x190 y415 w150 h20 Vpickapk , &Pick and Push APK
+Gui Add, Button, x190 y415 w150 h20 Vpickapk , Pick and Push APK
 pickapk_TT := "Select device from list to push"
-Gui Show, w500 h500, Auto-Mirror v0.4
+
+Gui Add, Button, x380 y415 w100 h20 disabled VBotitEmu  , % ("Bot It Emulator")
+;pickapk_TT := "Select device from list to push"
+Gui Show, w500 h500, Auto-Mirror v0.4.5
 Menu, Tray, Icon, Core\hoticon.png
 OnMessage(0x200, "WM_MOUSEMOVE")
 Return
-
 
 
 IsPaused := false
@@ -138,10 +146,33 @@ KeyWait, LButton, D
 }
 
 ButtonStart:
-if ( Reschoice = "Free Resolution" )
+
+if ( Reschoice = "" )
 {
-	GuiControl,, Terminal,Starting Mirror please wait
-	Batit = scrcpy-noconsole --window-title %targetwindow% -s %menuChoice% -Border
+	Reschoice =Free Resolution
+}
+	
+
+if ( Reschoice = "Free Resolution" ) 
+{
+	
+	
+	
+	if (dl1 = 1)
+	{	
+		GuiControl,, Terminal,Starting Mirror please wait
+		
+		Random, AZ,A,Z
+		Batit = scrcpy-noconsole --window-title %targetwindow% --record ..\..\..\Rec%AZ%.mp4  -s %menuChoice%
+		
+	}
+	
+	if (dl1 = 0)
+	{
+		GuiControl,, Terminal,Starting Mirror please wait
+		Batit = scrcpy-noconsole --window-title %targetwindow% -s %menuChoice% 
+	}
+	
 	FileDelete Core\Files\scrcpy\temp.bat
 	FileAppend %Batit% , Core\Files\scrcpy\temp.bat
 	Sleep, 1000
@@ -150,6 +181,7 @@ if ( Reschoice = "Free Resolution" )
 	GuiControl,, Terminal,Pushing The Next Step...Converting vegetarians
 	Run temp.bat, Core\Files\scrcpy\, Hide
 	sleep, 4000
+	
 	if WinExist(%targetwindow%)
 	{
 		
@@ -162,8 +194,23 @@ if ( Reschoice = "Free Resolution" )
 
 	else
 	{
+		
+		
+		
 		GuiControl,, Terminal,Starting Mirror please wait
-		Batit = scrcpy-noconsole --window-title %targetwindow% -m %Reschoice% -s %menuChoice%
+		
+		if (dl1 = 1)
+		{
+			Random, AZ,A,Z
+			Batit = scrcpy-noconsole --window-title %targetwindow% -m %Reschoice% --record ..\..\..\Rec%AZ%.mp4 -s %menuChoice%	
+		}
+		
+		if (dl1 = 0)
+		{
+			Batit = scrcpy-noconsole --window-title %targetwindow% -m %Reschoice% -s %menuChoice%	
+		}
+		
+		
 		FileDelete Core\Files\scrcpy\temp.bat
 		FileAppend %Batit% , Core\Files\scrcpy\temp.bat
 		Sleep, 1000
@@ -178,7 +225,7 @@ if ( Reschoice = "Free Resolution" )
 			GuiControl,, Terminal,Mirror Device: %menuChoice%  Resolution:%Reschoice%  Mirror Name:%targetwindow%
 	     }
 		return
-}
+	}
 
 ButtonTurnPhoneLCDOff:
 WinActivate, %targetwindow%
