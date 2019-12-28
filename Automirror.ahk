@@ -20,9 +20,9 @@ global targetwindow := "Mirror1" ;Window name
 
 Menu, Tray, Icon, Core\hoticon.png
 Gui Add, Text, x20 y40 h20 +0x200, Mirror Window Name:
-Gui, Add, Edit, x140 y40 w100 h20 +0x200 vtargetwindow gsubmit_all, %targetwindow%
+Gui, Add, Edit, x140 y40 w100 h20 +0x200 vtargetwindow gsubmit_all, %menuChoice%
 targetwindow_TT := "Grab window with grab button"
-Gui Add, DropDownList, x50 y200 w120  vmenuChoice gDevice , No Device||
+Gui Add, DropDownList, x50 y200 w120  vmenuChoice gsubmit_all , No Device||
 menuChoice_TT := "Pick device to Mirror"
 Gui Add, DropDownList, x370 y200 w120 vReschoice gRes , 800|960|Free Resolution|
 Reschoice_TT := "Pick Mirror Resolution"
@@ -54,7 +54,7 @@ Gui, Add, Edit, x10 y260 w480 h100 vTerminal ReadOnly, Welcome to Auto-Mirror
 Gui Add, Button, x410 y470 w80 h23 Vcrop1, Crop Screen
 crop1_TT := "Screen Crop user selected area"
 
-Gui, Add, CheckBox,x10 y400  h23 Vdl1,Record Mirror on 720P 
+Gui, Add, CheckBox,x10 y400  h23 Vdl1,Record Mirror To *.mp4
 dl1_TT := "Record Mirror on 720P Save after mirror close to Auto Mirror folder"
 
 
@@ -68,9 +68,11 @@ Gui Add, Button, x295 y370 w49 h20 Vconn2 , &Connect
 Gui Add, Button, x190 y415 w150 h20 Vpickapk , Pick and Push APK
 pickapk_TT := "Select device from list to push"
 
+;Gui Add, Button, x380 y415 w100 h20 vTCPIP,TCPIP Phone
+
 Gui Add, Button, x380 y415 w100 h20 disabled VBotitEmu  , % ("Bot It Emulator")
 ;pickapk_TT := "Select device from list to push"
-Gui Show, w500 h500, Auto-Mirror v0.4.5
+Gui Show, w500 h500, Auto-Mirror v0.4.6
 Menu, Tray, Icon, Core\hoticon.png
 OnMessage(0x200, "WM_MOUSEMOVE")
 Return
@@ -182,12 +184,12 @@ if ( Reschoice = "Free Resolution" )
 	Run temp.bat, Core\Files\scrcpy\, Hide
 	sleep, 4000
 	
-	if WinExist(%targetwindow%)
-	{
-		
-		GuiControl,, Terminal,Mirror Device: %menuChoice%  Resolution:%Reschoice%  Mirror Name:%targetwindow%
-		
-	}
+	;if WinExist(%Title1%)
+	;{
+	
+	GuiControl,, Terminal,Mirror Device: %menuChoice%  Resolution:%Reschoice%  Mirror Name:%Title1%
+	
+	;}
 	return
 	
 }
@@ -220,10 +222,11 @@ if ( Reschoice = "Free Resolution" )
 		Sleep, 2000
 		Run temp.bat, Core\Files\scrcpy\, Hide
 		sleep, 4000
-		if WinExist(%targetwindow%)
-		{
-			GuiControl,, Terminal,Mirror Device: %menuChoice%  Resolution:%Reschoice%  Mirror Name:%targetwindow%
-	     }
+		;msgbox,%Title1%
+		;if WinExist(%Title1%)
+		;{
+			GuiControl,, Terminal,Mirror Device: %menuChoice%  Resolution:%Reschoice%  Mirror Name:%Title1%
+	  ;   }
 		return
 	}
 
@@ -390,7 +393,15 @@ Device:
 Gui, Submit, NoHide
 
 
+buttonTCPIP:
+StringReplace,tcp1,menuChoice,%A_Space%,,All
+
+
+
+
 submit_all:
+StringReplace,Title1,menuChoice,%A_Space%,,All
+GuiControl,, targetwindow, %Title1%
 Gui, Submit, Nohide
 return
 
