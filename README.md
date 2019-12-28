@@ -1,4 +1,20 @@
 # Auto-Mirror
+Auto-Mirror V0.4.5
+
+![BotitCrop1](https://user-images.githubusercontent.com/52171360/70629418-a3301000-1c32-11ea-9b99-275a7d682578.png)
+
+
+*Added record screen option
+**Added Scrcpy core 1.12 (fix old device issues)
+***Botit emulator button and frame coded but disabled until fully tested so button is gray.
+****Fixed free res or no res picked = Free res
+*****Fixed clean up if mirror crash to Remirror
+
+** Screen record can run on multi devices. will save the *.mp4 on Auto-Mirror Folder under File name: Rec*randomNumber*.mp4
+
+DL:
+https://github.com/DizzyduckAR/AutoMirror/raw/master/Auto-Mirrorv0.4.5.zip
+
 Big Update Auto-Mirror v0.4
 
 **Added Full Tooltips (mouse over control)
