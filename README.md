@@ -1,5 +1,12 @@
 # Auto-Mirror
-Auto-Mirror V0.4.5
+Auto-Mirror V0.4.7
+
+small naming bug fix.
+
+credit to Sefer for Hunt and fix.
+
+
+
 
 ![BotitCrop1](https://user-images.githubusercontent.com/52171360/70629418-a3301000-1c32-11ea-9b99-275a7d682578.png)
 
