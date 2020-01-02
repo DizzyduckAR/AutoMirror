@@ -72,7 +72,7 @@ pickapk_TT := "Select device from list to push"
 
 Gui Add, Button, x380 y415 w100 h20 disabled VBotitEmu  , % ("Bot It Emulator")
 ;pickapk_TT := "Select device from list to push"
-Gui Show, w500 h500, Auto-Mirror v0.4.6
+Gui Show, w500 h500, Auto-Mirror v0.4.7
 Menu, Tray, Icon, Core\hoticon.png
 OnMessage(0x200, "WM_MOUSEMOVE")
 Return
@@ -394,14 +394,16 @@ Gui, Submit, NoHide
 
 
 buttonTCPIP:
+;StringReplace,tcp1,menuChoice,%A_Space%,,All
 StringReplace,tcp1,menuChoice,%A_Space%,,All
-
+StringReplace,tcp1,tcp1,%A_Tab%,,All
 
 
 
 submit_all:
 StringReplace,Title1,menuChoice,%A_Space%,,All
-GuiControl,, targetwindow, %Title1%
+StringReplace,Title1,Title1,%A_Tab%,,All
+GuiControl,,targetwindow,%Title1%
 Gui, Submit, Nohide
 return
 
