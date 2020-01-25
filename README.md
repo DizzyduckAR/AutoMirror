@@ -1,6 +1,8 @@
 # Auto-Mirror
 Auto-Mirror V0.5
 
+![AutoHotkey_vpnXRpMNDE](https://user-images.githubusercontent.com/52171360/73120930-211d5180-3f29-11ea-99fc-e6db61fb9cec.png)
+
 ![AutoHotkey_Nuwdj7YdKt](https://user-images.githubusercontent.com/52171360/73120920-e4e9f100-3f28-11ea-8d1d-d0a43bf7d50c.png)
 
 
