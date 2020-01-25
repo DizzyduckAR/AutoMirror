@@ -26,3 +26,8 @@ Thanks to:
 Heresy, SKAN! (countlines, setwidth, spaces), Olegbl, (suggestion for find*), infogulch (suggestion for tab \<-\> spaces),
 Murp|e (suggestions for documentation, check if file exists), ribbet.1 (New features in TF_LineNumber), Tuncay (help with
 TF() and borrowed ideas for TAIL).
+
+
+Hb Bitmaker
+
+for all the great code and gui

@@ -1,11 +1,7 @@
 # Auto-Mirror
-Auto-Mirror V0.4.7
+Auto-Mirror V0.4.5
 
-small naming bug fix.
-
-credit to Sefer for Hunt and fix.
-
-![Auto-Mirror Map](https://user-images.githubusercontent.com/52171360/72330178-e125b700-366a-11ea-9fc2-7c9e059f8a4d.png)
+![BotitCrop1](https://user-images.githubusercontent.com/52171360/70629418-a3301000-1c32-11ea-9b99-275a7d682578.png)
 
 
 *Added record screen option

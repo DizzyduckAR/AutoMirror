@@ -34,6 +34,8 @@ start_TT := "Start Mirror"
 ;grab2_TT := "Grab window name"
 Gui Add, Button, x10 y100  h31 Vgrab, &Grab IP And PORT 5555
 grab_TT := "Pick SN from device list and port it to wifi mode"
+Gui Add, Button, x410 y410  h31 VBotitEmu, &Bot-It Emulator
+BotitEmu_TT := "Call Bot-It Emulator and Run Emulator"
 Gui Add, Button, x215 y100  h31 Vkill, &Kill ADB Server
 kill_TT := "Kill all Adb devices Mirror/Emu"
 Gui Add, Button, x380 y100  h31 Voff , &Turn Phone LCD Off
@@ -70,9 +72,9 @@ pickapk_TT := "Select device from list to push"
 
 ;Gui Add, Button, x380 y415 w100 h20 vTCPIP,TCPIP Phone
 
-Gui Add, Button, x380 y415 w100 h20 disabled VBotitEmu  , % ("Bot It Emulator")
+;Gui Add, Button, x380 y415 w100 h20 disabled VBotitEmu  , % ("Bot It Emulator")
 ;pickapk_TT := "Select device from list to push"
-Gui Show, w500 h500, Auto-Mirror v0.4.7
+Gui Show, w500 h500, Auto-Mirror v0.5
 Menu, Tray, Icon, Core\hoticon.png
 OnMessage(0x200, "WM_MOUSEMOVE")
 Return
@@ -108,10 +110,14 @@ GuiControl,, Terminal,IP Grab Success %IP%Pick device from list
 return
 
 
+ButtonBot-ItEmulator:
+run,Bot-it Emulator.exe,Bot-it Emulator
+return
+
 ButtonPickandPushAPK:
 FileSelectFile, SelectedFile, 1
 if (SelectedFile = "")
-	{
+{
 	MsgBox, The user didn't select anything.
      return
 	}
