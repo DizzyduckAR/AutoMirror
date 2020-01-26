@@ -1,4 +1,29 @@
 # Auto-Mirror
+Auto-Mirror V0.5
+
+![AutoHotkey_vpnXRpMNDE](https://user-images.githubusercontent.com/52171360/73120930-211d5180-3f29-11ea-99fc-e6db61fb9cec.png)
+
+![AutoHotkey_Nuwdj7YdKt](https://user-images.githubusercontent.com/52171360/73120920-e4e9f100-3f28-11ea-8d1d-d0a43bf7d50c.png)
+
+
+
+Fixed:Multi mirror name issue
+Added:Bot-it Emulator
+
+Batter System image from google with much more stable game runs. (google Rep)
+
+New emulator downloader from google Rep.
+
+32Bit/64Bit support
+
+Normal qemu added. you can run emu on Old SDL if yu remove -no-window from the .bat and save.
+
+Start button will call Auto-mirror gui and close after open a emulator.
+
+
+
+
+
 Auto-Mirror V0.4.5
 
 ![BotitCrop1](https://user-images.githubusercontent.com/52171360/70629418-a3301000-1c32-11ea-9b99-275a7d682578.png)
