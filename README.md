@@ -1,4 +1,25 @@
+Auto-Mirror been moved to python version.
+this git is no longer under develop.
+
+App bundle to one project "Bot-It" Mirror (open source) / Portable Emulator / Bot Frame.
+The Bot frame is still supported in pure ahk.
+
+https://user-images.githubusercontent.com/52171360/77046813-e52ec780-6980-11ea-857d-42b6782d49d7.png
+
+https://user-images.githubusercontent.com/52171360/77046821-e6f88b00-6980-11ea-92d9-d6067450bbc8.png
+
+https://user-images.githubusercontent.com/52171360/77046824-e8c24e80-6980-11ea-9b3c-53b0a8305de2.png
+
+
+
+
+
+
 # Auto-Mirror
+
+
+
+
 Auto-Mirror V0.5
 
 ![AutoHotkey_vpnXRpMNDE](https://user-images.githubusercontent.com/52171360/73120930-211d5180-3f29-11ea-99fc-e6db61fb9cec.png)
