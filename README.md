@@ -1,5 +1,6 @@
 Auto-Mirror been moved to python version.
 this git is no longer under develop.
+https://github.com/DizzyduckAR/BotIt
 
 App bundle to one project "Bot-It" Mirror (open source) / Portable Emulator / Bot Frame.
 The Bot frame is still supported in pure ahk.
