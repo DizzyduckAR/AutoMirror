@@ -3,15 +3,23 @@ New Auto mirror App Fully portable and open source
 
 ![Auto_Mirror_TMyi6ILZII](https://user-images.githubusercontent.com/52171360/111868311-e9ba0180-8981-11eb-9785-bb27e4815504.png)
 
+
 Mirror All and Any Android Device No root needed.
+
 App Size 700KB and 33.7mb after Deploy.
 
 Fully Secure RSA handshake to bubble you from anything.
+
 Multi Mirror Built In
+
 Auto Support USB and WIFI mirror
+
 Auto Get connected device ip
+
 Remote ip connect
+
 kill all ADB
+
 Turn Device Screen On and Off (while keep mirror alive)
 
 Everything is tiny and adaptive to make an easy and smooth Mirror process.
@@ -20,7 +28,9 @@ Everything is tiny and adaptive to make an easy and smooth Mirror process.
 
 GUI:
 html / css / js
+
 ahk function with html dom
+
 SVG's by Flaticon
 
 
