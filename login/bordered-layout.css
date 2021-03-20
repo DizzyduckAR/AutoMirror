@@ -1,0 +1,31 @@
+.bordered-layout .header-navbar {
+  box-shadow : none;
+}
+
+.bordered-layout .header-navbar.floating-nav {
+  border : 1px solid #EBE9F1;
+}
+
+.bordered-layout .header-navbar.fixed-top {
+  border-bottom : 1px solid #EBE9F1;
+  background : #F8F8F8;
+}
+
+.bordered-layout .main-menu {
+  border-right : 1px solid #EBE9F1;
+  box-shadow : none;
+}
+
+.bordered-layout .dropdown-menu {
+  border : 1px solid #EBE9F1 !important;
+  box-shadow : none;
+}
+
+.bordered-layout .main-menu .navigation, .bordered-layout .main-menu {
+  background : #F8F8F8;
+}
+
+.bordered-layout .card, .bordered-layout .bs-stepper:not(.wizard-modern):not(.checkout-tab-steps), .bordered-layout .bs-stepper.wizard-modern .bs-stepper-content {
+  border : 1px solid #EBE9F1;
+  box-shadow : none;
+}
