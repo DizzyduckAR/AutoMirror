@@ -4,27 +4,22 @@
 SetBatchLines, -1
 OnExit, OnExit
 
+SetWorkingDir %A_ScriptDir%
 ; Include the Neutron library
 #Include <Neutron>
 #Include <tf>
 
 
-
-
+global helpindex:=1
+global version:="1.0.2"
 
 ; Create a new NeutronWindow and navigate to our HTML page
 neutron := new NeutronWindow()
 neutron.Load("login/login.html")
 ;for i, elem in neutron.Each(neutron.qsa(".neutron"));
 ;	elem.classList.remove("neutron")
-
-
-
 neutron.Gui("+LabelNeutron")
-
-
-
-neutron.Show("w450 h850")
+neutron.Show("w450 h860")
 return
 
 ; FileInstall all your dependencies, but put the FileInstall lines somewhere
@@ -90,11 +85,41 @@ return
 
 startup(neutron)
 {
+	IfNotExist, Mirror\version.ini
+	{
+		msgbox,,,Core Missing Self Deploy Started,1
+		url := "https://github.com/Genymobile/scrcpy/releases/download/v1.19/scrcpy-win64-v1.19.zip"
+		
+		Download("Core.zip", url)
+		zipname=Core.zip
+		zipFolder=%A_ScriptDir%\Mirror
+		SmartZip(zipname,zipFolder)
+		FileDelete,%A_ScriptDir%\Core.zip
+		IniWrite, 1.19,  Mirror\version.ini, version, my
+		; IniWrite, Pairs, Mirror\version.ini, Section
+	}
+	IfExist, Mirror\version.ini
+	{
+		IniRead, myvekr, Mirror\version.ini,version,my
+		;  msgbox, %myvekr%
+		if (myvekr!= 1.19)
+		{
+			msgbox,,,Core Missing Self Deploy Started,1
+			url := "https://github.com/Genymobile/scrcpy/releases/download/v1.19/scrcpy-win64-v1.19.zip"
+		
+			Download("Core.zip", url)
+			zipname=Core.zip
+			zipFolder=%A_ScriptDir%\Mirror
+			SmartZip(zipname,zipFolder)
+			FileDelete,%A_ScriptDir%\Core.zip
+			IniWrite, 1.19,  Mirror\version.ini, version, my
+			}
+	}
 	;check Core
 	IfNotExist, Mirror\adb.exe
 	{
 		msgbox,,,Core Missing Self Deploy Started,2
-		url := "https://github.com/Genymobile/scrcpy/releases/download/v1.17/scrcpy-win64-v1.17.zip"
+		url := "https://github.com/Genymobile/scrcpy/releases/download/v1.19/scrcpy-win64-v1.19.zip"
 		
 		Download("Core.zip", url)
 		zipname=Core.zip
@@ -103,7 +128,12 @@ startup(neutron)
 		FileDelete,%A_ScriptDir%\Core.zip
 	}
 	
-	
+	IfNotExist, Mirror\ip.bat
+	{
+		url := "https://raw.githubusercontent.com/DizzyduckAR/AutoMirror/master/lib/ip.bat"
+		
+		Download("Mirror/ip.bat", url)
+	}
 	
 	test := neutron.doc.getElementById("mainselect")
         test2 := neutron.doc.createElement("option")
@@ -119,6 +149,52 @@ startup(neutron)
         test2.text := looper
         test.add(test2)
 }
+
+helpbtnn(neutron)
+{
+	helpindex:=helpindex+1
+
+	if (helpindex=2)
+	{
+		neutron.doc.getElementById("helpname").innerHTML := "Developer mode unlock"
+		neutron.doc.getElementById("helpimg").src:="https://raw.githubusercontent.com/DizzyduckAR/AutoMirror/master/HelpGifs/DevMode.gif"
+		return
+
+	}
+	
+	if (helpindex>=3)
+	{
+		helpindex:=3
+		neutron.doc.getElementById("helpname").innerHTML := "Connect Phone"
+		neutron.doc.getElementById("helpimg").src:="https://raw.githubusercontent.com/DizzyduckAR/AutoMirror/master/HelpGifs/phone2pc.png"
+		return
+	}
+	
+	;msgbox,next index %helpindex%
+}
+
+helpbtnb(neutron)
+{
+	helpindex:=helpindex-1
+	if (helpindex=2)
+	{
+		neutron.doc.getElementById("helpname").innerHTML := "Developer mode unlock"
+		neutron.doc.getElementById("helpimg").src:="https://raw.githubusercontent.com/DizzyduckAR/AutoMirror/master/HelpGifs/DevMode.gif"
+		return
+
+	}
+
+	if (helpindex<=1)
+	{
+		neutron.doc.getElementById("helpname").innerHTML := "RSA Allow"
+		neutron.doc.getElementById("helpimg").src := "https://raw.githubusercontent.com/DizzyduckAR/AutoMirror/master/HelpGifs/RSA.png"
+		helpindex:=1
+		return
+	}
+	;msgbox,back index %helpindex%
+	
+}
+
 
 lcdon(neutron)
 {
@@ -217,12 +293,7 @@ connectip(neutron)
 	barstate +=0
 	neutronjswrap("botststusbar","progbar",barstate "%",neutron)
 	menuChoicetmp3 := neutron.doc.getElementById("targetname").value
-	;msgbox,%menuChoicetmp3%
 	buildname := "adb connect " menuChoicetmp3 ":5555"
-	;msgbox,%buildname%
-	;runwait %comspec% /c Mirror\adb.exe %buildname%
-	;RunWait, %comspec% /c Mirror\adb.exe %buildname%
-	;Send, %buildname%{enter}
 	FileDelete, Mirror\connect.bat
 	FileAppend,
 	(
@@ -410,7 +481,8 @@ neutronjswrap(element,mode,var,neutron)
 
 SetTitle(neutron)
 {
-    neutron.doc.getElementById("titlebar123").innerHTML := "Auto Mirror"
+   
+	neutron.doc.getElementById("titlebar123").innerHTML := "Auto Mirror  V" version
 	
 }
 
@@ -425,14 +497,15 @@ Neutron(neutron, event)
 	;MsgBox, % "You clicked: " event.target.innerText
 }
 
-Website(neutron, event)
+arazu(neutron, event)
 {
 	; event.target will contain the HTML Element that fired the event.
 	; Show a message box with its inner text.
-	discord := "https://discord.gg/ggRCXS2"
-	run,%discord%
+	Neutron := "https://github.com/DizzyduckAR"
+	run,%Neutron%
 	;MsgBox, % "You clicked: " event.target.innerText
 }
+
 
 
 
